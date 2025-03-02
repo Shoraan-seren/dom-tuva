@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>СЕРЕН ШОРААН ВЛАДИМИРОВИЧ - Инженер-Проектировщик Частных Домов</title>
+  <title>СЕРЕН ШОРААН ВЛАДИМИРОВИЧ - Проектирование Частных Домов</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,21 +16,21 @@
     header {
       background: linear-gradient(to right, #ffffff, #007f85);
       color: #000000;
-      padding: 10px 20px; /* Уменьшаем высоту шапки и добавляем отступы */
+      padding: 10px; /* Уменьшаем высоту шапки и добавляем отступы */
       text-align: center;
       position: relative;
       z-index: 10;
     }
     .logo-container {
       position: absolute;
-      top: 10px;
+      top: 20px;
       left: 20px; /* Размещаем логотип в крайнем левом положении */
-      width: 100px; /* Размер логотипа */
-      height: 100px; /* Размер логотипа */
+      width: 90px; /* Размер логотипа */
+      height: 90px; /* Размер логотипа */
     }
     .logo-container img {
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
       object-fit: cover;
       border-radius: 10px;
     }
@@ -38,12 +38,12 @@
       text-align: center;
     }
     .header-content h1 {
-      font-size: 36px; /* Увеличиваем шрифт заголовка */
+      font-size: 28px; /* Увеличиваем шрифт заголовка */
       margin: 0;
     }
     .social-media-header {
       position: absolute;
-      top: 10px;
+      top: 20px;
       right: 20px; /* Размещаем иконку ВК в крайнем правом положении */
     }
     .social-media-header a {
@@ -74,7 +74,7 @@
     }
     .social-media {
       margin-top: 20px;
-      text-align: center;
+      
     }
     .social-media a {
       color: #007f85; /* Цвет акцента для иконки ВК внизу страницы */
@@ -109,7 +109,7 @@
     .gallery {
       display: flex;
       flex-direction: column; /* Перемещаем заголовок над картинками */
-      align-items: center;
+      
     }
     .gallery h2 {
       margin-bottom: 20px; /* Добавляем отступ под заголовком */
@@ -132,6 +132,22 @@
       padding: 10px;
       margin-bottom: 10px;
     }
+    /* Медиазапросы для мобильных устройств */
+    @media (max-width: 430px) {
+      .header-content h1 {
+        font-size: 20px; /* Уменьшаем шрифт названия при ширине экрана меньше 430 пикселей */
+      }
+      .logo-container {
+        width: 45px; /* Уменьшаем размер логотипа до 45 пикселей при ширине экрана меньше 430 пикселей */
+        height: 45px;
+      }
+      .logo-container img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -141,7 +157,7 @@
     </div>
     <div class="header-content">
       <h1>ПРОЕКТЫ ДОМОВ</h1>
-      <p><strong>DOM TUVA (ИП Серен Ш.В.)<strong></p>
+      <p><strong>DOM TUVA (ИП Серен Ш.В.)</strong></p>
     </div>
     <div class="social-media-header">
       <a href="https://vk.com/dom_tuva" target="_blank" style="color: #ffffff; text-decoration: none;">
